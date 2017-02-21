@@ -12,7 +12,7 @@ $article = file_get_contents('https://habrahabr.ru/post/'.$article_id.'/');
 if($article==true)
 {
 	
-echo $article;
+	echo $article;
 
 	$pie_title = explode('<title>', $article);
 	$pie_title = explode('</title>', $pie_title[1]);
