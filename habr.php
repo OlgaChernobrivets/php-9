@@ -53,7 +53,9 @@ else {
 }
 
 $result_json = json_encode($result, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
-file_put_contents($file_name, $result_json, FILE_APPEND);
+file_put_contents($file_name, $result_json);
+
+//я понимаю, что в данном задании нужна функция, даже почти продумала ее, но не успела реализовать, если Вы не проверите до 28.02, то будет с функцией
 
 
 
